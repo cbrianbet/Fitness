@@ -6,3 +6,8 @@ class Posts(models.Model):
     post = models.CharField(max_length=200)
     date = models.DateTimeField()
 
+
+class MyUser(models.Model):
+    email = models.EmailField()
+    username = models.CharField(max_length=50)
+    password = models.CharField(max_length=20)

@@ -7,4 +7,5 @@ router.register('posts', views.PostView)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('post/', views.blog, name='post')
 ]

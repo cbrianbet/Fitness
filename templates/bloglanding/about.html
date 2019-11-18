@@ -1,0 +1,52 @@
+{% extends 'posts/base.html' %}
+{% block title %}
+About
+{% endblock %}
+{% block body %}
+<body class="text-center"
+      background="https://images.unsplash.com/photo-1532384555668-bc0c32a17ffd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+      style="background-position: center">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">About</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+                <a class="nav-link" href="{% url 'post' %}">Blog</a>
+                <a class="nav-link active" href="{% url 'about' %}">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <main role="main" class="inner cover container">
+            <h1 class="cover-heading">THE FITNESS GUIDE</h1>
+            <p class="lead">The one place with the best fitness tips this side of the solar system. Welcome</p>
+            <p class="lead">
+            </p>
+        </main>
+    </div>
+    <footer class="mastfoot mt-auto">
+        photo credits: <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;"
+                          href="https://unsplash.com/@aloragriffiths?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                          target="_blank" rel="noopener noreferrer"
+                          title="Download free do whatever you want high-resolution photos from Danielle Cerullo">
+          <span style="display:inline-block;padding:2px 3px">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                   viewBox="0 0 32 32">
+                  <title>unsplash-logo</title>
+                  <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+              </svg>
+          </span>
+        <span style="display:inline-block;padding:2px 3px">
+            Alora Griffiths
+        </span>
+    </a>
+        <div class="inner">
+        </div>
+    </footer>
+</div>
+</body>
+{% endblock %}

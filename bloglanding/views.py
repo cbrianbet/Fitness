@@ -7,4 +7,4 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'bloglanding/cover.html')
+    return render(request, 'bloglanding/about.html')
